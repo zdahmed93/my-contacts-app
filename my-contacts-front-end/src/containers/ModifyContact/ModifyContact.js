@@ -1,13 +1,15 @@
 import React, {Component} from 'react'
-import {Link} from "react-router-dom";
+import {connect} from 'react-redux';
+import axios from 'axios';
 
 class ModifyContact extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      nameInput: this.props.name,
-      phoneInput: this.props.phoneNumber,
-      emailInput: this.props.email
+      nameInput: this.props.selectedContact.name,
+      phoneInput: this.props.selectedContact.phoneNumber,
+      emailInput: this.props.selectedContact.email
+
     }
   }
 
@@ -22,6 +24,21 @@ class ModifyContact extends Component{
 
   handleEmailInputChange = (event) => {
     this.setState({emailInput: event.target.value})
+  }
+
+  handleModifications = (event) => {
+    event.preventDefault();
+    const id = this.props.selectedContact.id;
+    const {nameInput, phoneInput, emailInput} = this.state;
+    const newContactCredentials = {
+      name: nameInput,
+      phoneNumber: phoneInput,
+      email: emailInput
+    }
+    axios.put(`http://localhost:4000/modify_contact/${id}`, newContactCredentials )
+      .then(res => console.log(res))
+      .then(res => this.props.history.push("/contacts"))
+      .catch(err => console.log(err))
   }
 
   render() {
@@ -57,14 +74,15 @@ class ModifyContact extends Component{
               onChange={this.handleEmailInputChange}
             />
           </div>
-
-          <Link to="/contacts">
-            <button>Modify Contact</button>
-          </Link>
+            <button onClick={(event) => this.handleModifications(event)}>Modify Contact</button>
         </form>
       </div>
     )
   }
 }
 
-export default ModifyContact;
+const mapStateToProps = ({selectedContact}) => ({
+  selectedContact
+})
+
+export default connect(mapStateToProps)(ModifyContact);

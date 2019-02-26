@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import ContactCard from '../../components/ContactCard/ContactCard'
+import ContactCard from '../ContactCard/ContactCard'
+import {fetchAllContacts} from '../../actions/main'
 
 class DisplayContacts extends Component {
 
+  componentDidMount(){
+    this.props.fetchAllContacts();
+  }
   render(){
     return(
       <div>
@@ -14,6 +18,7 @@ class DisplayContacts extends Component {
             name={item.name}
             phoneNumber={item.phoneNumber}
             email={item.email}
+            id={item._id}
           />
         ))}
       </div>
@@ -25,4 +30,10 @@ const mapStateToProps = ({contacts}) => ({
   contacts
 })
 
-export default connect(mapStateToProps)(DisplayContacts)
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchAllContacts: () => dispatch(fetchAllContacts())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(DisplayContacts)

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Route, Switch, Link} from 'react-router-dom'
 import DisplayContacts from './containers/DisplayContacts/DisplayContacts'
-import AddContactForm from './containers/AddContactForm/AddContactForm'
+import AddContactForm from './components/AddContactForm/AddContactForm'
 import ModifyContact from './containers/ModifyContact/ModifyContact'
 class App extends Component {
   render() {

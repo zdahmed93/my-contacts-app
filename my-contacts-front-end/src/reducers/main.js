@@ -1,32 +1,41 @@
 
 import {combineReducers} from 'redux'
 
-import { ADD_CONTACT } from '../actions/main'
-const initialContactsState = [
-  {
-    "_id" : "5c70c337bd1949ca00387bd4",
-    "name" : "Ahmed",
-    "phoneNumber" : "123456",
-    "email" : "ahmed@gmail.com"
-  },
-  {
-    "_id" : "5c70c2a2bd1949ca00387bd3",
-    "name" : "Jacob",
-    "phoneNumber" : "112233",
-    "email" : "jacob@gmail.com"
-  }
-]
+import { FETCH_ALL_CONTACTS, REMOVE_CONTACT, SELECT_CONTACT } from '../actions/main'
 
-const contactsReducer = (state = initialContactsState, action) => {
+
+const contactsReducer = (state = [], action) => {
   switch (action.type) {
-    case ADD_CONTACT:
-      return [...initialContactsState, action.payload];
+
+    case FETCH_ALL_CONTACTS:
+      return action.payload.data;
+
+    case REMOVE_CONTACT:
+      return [...state].filter(item => (item._id !== action.id))
 
     default:
       return state;
   }
 }
 
+const initialSelection = {
+  name:'',
+  phoneNumber: '',
+  email: '',
+  id: ''
+}
+
+const selectedContactReducer = (state = initialSelection, action) => {
+  switch (action.type) {
+    case SELECT_CONTACT:
+      return action.payload;
+    default:
+      return state
+  }
+}
+
+
 export default combineReducers({
-  contacts: contactsReducer
+  contacts: contactsReducer,
+  selectedContact: selectedContactReducer
 })

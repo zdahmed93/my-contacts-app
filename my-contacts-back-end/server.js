@@ -30,7 +30,7 @@ MongoClient.connect(MongoDB_URL, (err, client) => {
         const {body} = req;
         db.collection("contacts").insertOne(body, (err, data) => {
             if (err) res.status(400).send("error the contact has not been added")
-            else res.send("The contact has been added successfully")
+            else res.send(body)
         })
     })
 
@@ -65,7 +65,7 @@ MongoClient.connect(MongoDB_URL, (err, client) => {
             res.status(400).send('No the contact was not modified.' )
             console.log('No the contact was not modified. Error : ',err )
           }
-          else res.send('the contact was successfully modified')
+          else res.send(body)
         })
       });
 
@@ -74,7 +74,7 @@ MongoClient.connect(MongoDB_URL, (err, client) => {
         const {id} = req.params;
         db.collection('contacts').findOneAndDelete({_id: ObjectID(id)}, (err, data) => {
           if (err) res.status(400).send('failed to delete contact')
-          else res.send('the contact was successfully deleted')
+          else res.send(data.value)
         })
       })
 
