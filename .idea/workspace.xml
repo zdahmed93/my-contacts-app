@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b3d9e2a-695c-4f76-b1df-31e5e580c9b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-contacts-front-end/src/components/AddContactForm/AddContactForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-contacts-front-end/src/containers/ContactCard/ContactCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-back-end/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-contacts-back-end/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-contacts-front-end/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/my-contacts-front-end/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-contacts-front-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-contacts-front-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-contacts-front-end/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/src/actions/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-contacts-front-end/src/actions/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/src/components/ContactCard/ContactCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/src/containers/AddContactForm/AddContactForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/src/containers/DisplayContacts/DisplayContacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-contacts-front-end/src/containers/DisplayContacts/DisplayContacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/src/containers/ModifyContact/ModifyContact.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-contacts-front-end/src/containers/ModifyContact/ModifyContact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-contacts-front-end/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-contacts-front-end/src/reducers/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-contacts-front-end/src/reducers/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="6b3d9e2a-695c-4f76-b1df-31e5e580c9b0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -38,6 +22,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JavaScript" value="19" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -118,14 +103,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my-contacts-front-end/src/containers/ModifyContact/ModifyContact.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="65" column="14" lean-forward="true" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
+            <state relative-caret-position="176">
+              <caret line="68" column="15" lean-forward="true" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -2094,7 +2088,7 @@
       <path value="$PROJECT_DIR$/my-contacts-front-end/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
@@ -2170,12 +2164,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551112621738</updated>
-      <workItem from="1551112624418" duration="17042000" />
+      <workItem from="1551112624418" duration="17957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17042000" />
+    <option name="totallyTimeSpent" value="17957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -2273,11 +2267,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-contacts-front-end/src/containers/ModifyContact/ModifyContact.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="65" column="14" lean-forward="true" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
+        <state relative-caret-position="176">
+          <caret line="68" column="15" lean-forward="true" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
